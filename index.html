@@ -61,7 +61,6 @@
     border-radius: 10px;
     backdrop-filter: blur(1px);
     z-index: 0;
-    
     }
 
     .hero-text h1 {
@@ -78,8 +77,8 @@
     /* Tilted video box */
     .hero-video {
     position: absolute;
-    top: 180px;
-    right: 0px;
+    top: 330px;
+    right: 100px;
     width: 40%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.6);
     z-index: 0;
@@ -87,6 +86,11 @@
     overflow: hidden;
     }
 
+    .hero-video:hover{
+    transform: scale(1.3);
+    }
+
+   
     .hero-video video {
     width: 100%;
     display: block;
@@ -95,8 +99,9 @@
 
     /* CARD SECTION */
     .card-section {
-      
-      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       gap: 20px;
       padding: 50px 10%;
       background-color: #ffffff;
@@ -111,6 +116,8 @@
       width: 280px;
       transition: transform 0.3s ease;
     }
+
+    
     
     .card {
       background: white;
@@ -163,6 +170,21 @@
         padding: 30px 5%;
       }
     }
+
+    .center {
+    text-align: center;
+    border: 3px solid green;
+    }
+    .custom-textbox {
+
+
+        width: 300px;
+
+
+        height: 40px;
+
+
+}
   </style>
 </head>
 <body>
@@ -192,6 +214,7 @@
   </section>
 
   <!-- CARD SECTION -->
+  
   <section class="card-section">
     <div class="top-card">
       <h3>Top Speed</h3>
@@ -209,7 +232,55 @@
       <h3>Smart Interior</h3>
       <p>Includes voice assistant, panoramic HUD, memory seats, and climate AI.</p>
     </div>
+    <div class="card">
+      <h3>Smart </h3>
+      <p>Includes </p>
+    </div>
+    <div class="card">
+      <h3>Smart</h3>
+      <p>Includes</p>
+    </div>
   </section>
+
+  <div class="center">
+    <h3>Mercedes Vision AVTR Test Drive Form
+    <form>
+        
+      <input type="text" name="Name" class="custom-textbox" placeholder="Name"> 
+      <br>
+      <br>
+
+      <input type="email" name="Email" class="custom-textbox" placeholder="Email">
+      <br>
+      <br>
+      <input type="number" name="Phone Number" class="custom-textbox" placeholder="Phone Number">
+      <br>
+      <br>
+      <input type="number" name="ID Card Number" class="custom-textbox" placeholder="ID Card Number">
+      <br>
+      <br>
+   
+     
+
+      <input type="submit" value="Submit" class="custom-textbox" >
+
+    </form>
+ 
+  </div>
+  <br>
+  <br>
+
+  <br>
+
+  <footer class="center">
+    <p>
+      &copy;BuleAdidas'page
+    </p>
+   
+    <p>
+      if you have any question contact with me using my email below</p>
+       <a href="myemail">731104277@qq.com</a>
+
 
 </body>
 </html>
